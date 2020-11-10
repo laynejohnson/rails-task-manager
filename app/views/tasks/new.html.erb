@@ -1,0 +1,18 @@
+# New Task
+
+title input
+details input
+create task button
+back to list of tasks link
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+
+<div>
+<%= link_to "Back to Tasks", tasks_path %>
+</div>

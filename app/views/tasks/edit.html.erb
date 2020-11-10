@@ -1,4 +1,4 @@
-<h1>Create a new task:</h1>
+<h1>Edit task:</h1>
 
 <%= form_for(@task) do |f| %>
   <%= f.label :title %>
@@ -8,6 +8,5 @@
   <%= f.submit %>
 <% end %>
 
-<div>
-<%= link_to "Back to Tasks", tasks_path %>
-</div>
+<input type="checkbox" name="completed">
+<label for="completed">This task has been completed!</label>
